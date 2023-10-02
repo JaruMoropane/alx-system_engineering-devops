@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # Displays "To infinity and beyond" indefinitely,
 # with a sleep 2 in between each iteration.
 # Displays "I am invincible!!!" in between each iteration.
@@ -8,4 +9,15 @@ do
 	echo "To infinity and beyond"
 	sleep 2
 	trap 'echo "I am invincible"' SIGTERM 
+=======
+# Displays "To infinity and beyond" indefinitely with
+#+ a sleep 2 in between each iteration.
+#   Displays "I am invincible!!!" in between each iteration.
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+  trap 'echo "I am invincible!!!"' SIGTERM 
+>>>>>>> 8b0d5434ba423209daac19c2b98c700b47c5293e
 done
