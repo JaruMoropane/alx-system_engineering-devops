@@ -1,2 +1,4 @@
-#!/usr/bin/env ruby
-puts ARGV[0].scan(/School/).join
+#!/usr/bin/env bash
+# Displays its own PID.
+
+echo $$
