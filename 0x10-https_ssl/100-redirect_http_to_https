@@ -31,7 +31,7 @@ frontend www-http
     default_backend www-backend
 
 frontend www-https
-    bind   0.0.0.0:443 ssl crt /etc/letsencrypt/archive/www.jarum.tech/www.jarum.tech.pem
+    bind   0.0.0.0:443 ssl crt /etc/letsencrypt/live/www.jarum.tech/fullchain.pem
     http-request add-header X-Forwarded-Proto https
     acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
     use_backend letsencrypt-backend if letsencrypt-acl
